@@ -1,0 +1,51 @@
+﻿@model Project_23TH0013.Models.Chitietdonhang
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Chitietdonhang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Soluong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dongia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dongia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Donhang.Madon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Donhang.Madon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sanpham.TenCake)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sanpham.TenCake)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
